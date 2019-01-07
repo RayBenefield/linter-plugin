@@ -1,0 +1,20 @@
+{
+  "name": "rete-linter-plugin",
+  "version": "0.1.0",
+  "description": "",
+  "main": "build/linter-plugin.min.js",
+  "module": "build/linter-plugin.debug.js",
+  "scripts": {
+    "build": "rete --build rete.config.js",
+    "build:dev": "rete --build rete.config.js --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "rete-cli": "^0.3.0"
+  }
+}
